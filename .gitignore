@@ -1,0 +1,12 @@
+# env should not be commited to git,
+# but for the sake of this test, only I left it in
+# .env
+.vscode/
+.idea/
+node_modules/
+build/
+typings/
+.npm
+.eslintcache
+.node_repl_history
+aws-test-keys/
