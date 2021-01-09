@@ -1,6 +1,6 @@
 {
   "name": "mw-npm-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mark Webley",
   "description": "npm node module test, for artifacts for registry.",
   "main": "index.js",
@@ -21,7 +21,6 @@
     "parallel",
     "async await"
   ],
-  "author": "Mark Webley",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.9",
