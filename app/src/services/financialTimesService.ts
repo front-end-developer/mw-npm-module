@@ -62,8 +62,6 @@ function financialTimesService() {
         catch (err) {
             throw err;
         }
-
-
     }
 
     // getDataService().catch(err => console.log('Error:', err));
