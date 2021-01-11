@@ -1,17 +1,46 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mark fizzbuzz, Node | Typescript test</title>
+    <title>Mark, Node | Typescript | Unit Tests | Node Published pkgs</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
 </head>
 <body>
 <div class="container">
-    <h1>Welcome <%=user %></h1>
-    <ul>
+    <h2>Welcome <%=user %></h2>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">symbol</th>
+            <th scope="col">Code</th>
+            <th scope="col">high</th>
+            <th scope="col">low</th>
+            <th scope="col">openPrice</th>
+            <th scope="col">closePrice</th>
+            <th scope="col">change1DayPercent</th>
+            <th scope="col">volume</th>
+        </tr>
+        </thead>
+        <tbody>
         <% for (let i=0; i < list.length; i++) { %>
-        <li><%=list[i] %></li>
+        <tr>
+            <th scope="row"><%=list[i].basic.symbol %></th>
+            <td>
+                <%=list[i].basic.exhangeCode %>
+            </td>
+            <td><%=Number(list[i].quote.high).toFixed(2) %></td>
+            <td><%=Number(list[i].quote.low).toFixed(2) %></td>
+            <td><%=Number(list[i].quote.openPrice).toFixed(2) %></td>
+            <td><%=Number(list[i].quote.closePrice).toFixed(2) | 'NA' %></td>
+            <td><%=Number(list[i].quote.change1DayPercent).toFixed(2) %></td>
+            <td><%=list[i].quote.volume %></td>
+        </tr>
         <% } %>
-    </ul>
+        </tbody>
+    </table>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </div>
 </body>
 </html>
-

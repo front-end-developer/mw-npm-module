@@ -5,7 +5,7 @@
   "description": "npm node module test, for artifacts for registry.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest 'app/src/**/*.spec.ts'",
     "tsc": "tsc",
     "debug": "set DEBUG=app:*,hotpro-mw-node-backend-app & ts-node-dev --respawn --transpile-only ./app/app.ts",
     "dev": "ts-node-dev --respawn --transpile-only ./app/app.ts",
@@ -36,6 +36,7 @@
     "typescript": "^4.1.3"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.11.1",
     "chalk": "^4.1.0",
@@ -45,6 +46,9 @@
     "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "morgan": "^1.10.0"
+    "jest": "^26.6.3",
+    "morgan": "^1.10.0",
+    "sinon": "^9.2.3",
+    "ts-jest": "^26.4.4"
   }
 }

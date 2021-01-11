@@ -1,6 +1,8 @@
-##### Mark Webley: test
+##### Mark Webley:
 
-Repo: https://github.com/front-end-developer/
+Repo: https://github.com/front-end-developer/mw-npm-module
+
+npm: https://www.npmjs.com/package/mw-npm-module
 
 ##### About:
 Nothing fancy just something experimental with node with typescript, & automated AWS CI / CD integration,
@@ -8,6 +10,8 @@ custom node module for artifacts / registry.
 
 I set up the template to load dependencies like boostrap etc as is, so that it can run locally when off line for some reason during development, but I could set it up optionally to run off a CDN.
 
+Features:
+Node & Typescript | node (artifacts) registry | node module | node & Typescript | Jest Unit Test (spec) with node | Integration Test set up | typescript and Jest | services | API | Bootstrap
 
 ##### Dependency:
 
@@ -24,6 +28,8 @@ npm run prod
 
 npm run stop && npm run tsc && npm run dev
 
+npm run test
+
 
 ROUTES:
 
@@ -32,11 +38,12 @@ http://localhost:3000
 
 
 
-##### Github / AWS Integration
-![Alt text](screenshots/aws-integration.png "List view")
+##### Results after request in datatable
+![Alt text](screenshots/stocks-datatable.png "Stocks Datatable View")
 
-#### Github / AWS automation on CI / CD
-![Alt text](screenshots/aws-integration-code-pipeline.png "List view")
+##### Unit tests / Integration Tests
+![Alt text](screenshots/unit-test.png "Jest Unit Test")
+
 
 
 NOTE:
