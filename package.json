@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest 'app/src/**/*.spec.ts'",
     "tsc": "tsc",
-    "debug": "set DEBUG=app:*,hotpro-mw-node-backend-app & ts-node-dev --respawn --transpile-only ./app/app.ts",
+    "debug": "set DEBUG=app:* & ts-node-dev --respawn --transpile-only ./app/app.ts",
     "dev": "ts-node-dev --respawn --transpile-only ./app/app.ts",
     "prod": "tsc && node ./build/app.js",
     "stop": "npx kill-port 3000",
