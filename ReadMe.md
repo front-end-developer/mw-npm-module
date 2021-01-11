@@ -10,6 +10,9 @@ custom node module for artifacts / registry.
 
 I set up the template to load dependencies like boostrap etc as is, so that it can run locally when off line for some reason during development, but I could set it up optionally to run off a CDN.
 
+##### Note:
+In the future I may do another version using Reactive Programming techniques with RxJS.
+
 ##### Features:
 Basic Architecture | Node & Typescript | node (artifacts) registry | node module | node & Typescript | Jest Unit Test (spec) with node | Integration Test set up | typescript and Jest | services | API | dynamic template | Bootstrap
 
